@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>חמישי של בעיות</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/chamishi.png" />
+    <meta property="og:title" content="חמישי של בעיות - מבצע לוהט!" />
+    <meta
+      property="og:description"
+      content="מבצע על הדילדו רק 1,000,500₪! לחץ כדי לראות את התגובות."
+    />
+    <meta
+      property="og:image"
+      content="https://eu-images.contentstack.com/v3/assets/blt70200aeea7ce7e0e/blt1dd3449a120cd659/64fef116bcecfd5763066e06/28753-realrock-glow-in-the-dark-realistic-slim-dildo-with-suction-cup-16-cm_01_product_q100.jpg"
+    />
+    <meta property="og:url" content="https://shai249.github.io/" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header-section">
+        <h1 class="dildo-price">מבצע על הדילדו 1,000,500.999999999999999₪</h1>
+        <h1 class="delivery">משלוח חינם לתוך התחת + תוספת תשלום</h1>
+        <img
+          class="product-image clickable-image"
+          src="https://eu-images.contentstack.com/v3/assets/blt70200aeea7ce7e0e/blt1dd3449a120cd659/64fef116bcecfd5763066e06/28753-realrock-glow-in-the-dark-realistic-slim-dildo-with-suction-cup-16-cm_01_product_q100.jpg?quality=90&width=750&height=auto&format=webp&auto=webp&disable=upscale"
+          alt="דילדו"
+          onclick="openImageModal(this)"
+        />
+      </div>
+
+      <div class="people-grid">
+        <div class="person-card nadi">
+          <h1>נדי</h1>
+          <img
+            src="./assets/nadi.png"
+            alt="נדי"
+            class="clickable-image"
+            onclick="openImageModal(this)"
+          />
+          <h2 class="reaction">תגובה לקבלת הדילדו בתחת</h2>
+        </div>
+        <div class="person-card shmueli">
+          <h1>שמואלי</h1>
+          <img
+            src="./assets/shmueli.jpg"
+            alt="שמואלי"
+            class="clickable-image"
+            onclick="openImageModal(this)"
+          />
+          <h2 class="reaction">תגובה לקבלת הדילדו בתחת</h2>
+        </div>
+        <div class="person-card shavit">
+          <h1>שביט</h1>
+          <img
+            src="./assets/shvit.jpg"
+            alt="שביט"
+            class="clickable-image"
+            onclick="openImageModal(this)"
+          />
+          <h2 class="reaction">תגובה לקבלת הדילדו בתחת</h2>
+        </div>
+        <div class="person-card yarin">
+          <h1>ירין</h1>
+          <img
+            src="./assets/yarin.jpg"
+            alt="ירין"
+            class="clickable-image"
+            onclick="openImageModal(this)"
+          />
+          <h2 class="reaction">תגובה לקבלת הדילדו בתחת</h2>
+        </div>
+      </div>
+
+      <div class="credit-section">
+        <button class="credit-button" onclick="openFullscreen()">
+          קרדיט לשביט
+        </button>
+      </div>
+    </div>    <!-- Shavit Animation Overlay -->
+    <div class="shavit-animation" id="shavitAnimation">
+      <img src="./assets/shvit.jpg" alt="שביט" class="shavit-center-image" />
+      <img src="./assets/dildo.png" alt="דילדו" class="dildo-bouncing" />
+    </div>
+
+    <div
+      class="fullscreen-modal"
+      id="fullscreenModal"
+      onclick="closeFullscreen()"
+    >
+      <div class="fullscreen-content">
+        <img src="" alt="" class="fullscreen-image" id="fullscreenImage" />
+        <button class="close-button" onclick="closeFullscreen(event)">✕</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
